@@ -5,8 +5,9 @@ This guide explains how to configure environment variables for all three service
 ## Overview
 
 The application consists of three services:
+
 - **Frontend (Next.js)** - Port 3000
-- **Backend (Express)** - Port 5000  
+- **Backend (Express)** - Port 5000
 - **ML Service (FastAPI)** - Port 8000
 
 Each service requires specific environment variables for Supabase and Azure OpenAI integration.
@@ -16,11 +17,13 @@ Each service requires specific environment variables for Supabase and Azure Open
 ### 1. Frontend Environment Variables
 
 Copy the template and create your environment file:
+
 ```bash
 cp env.example .env.local
 ```
 
 Edit `.env.local` with your actual values:
+
 ```env
 # Supabase Configuration (Public - exposed to client)
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
@@ -40,12 +43,14 @@ NEXT_PUBLIC_ML_SERVICE_URL=http://localhost:8000
 ### 2. Backend Environment Variables
 
 Copy the template and create your environment file:
+
 ```bash
 cd backend
 cp env.example .env
 ```
 
 Edit `backend/.env` with your actual values:
+
 ```env
 # Server Configuration
 PORT=5000
@@ -69,12 +74,14 @@ JWT_SECRET=your_jwt_secret_key
 ### 3. ML Service Environment Variables
 
 Copy the template and create your environment file:
+
 ```bash
 cd ml-service
 cp env.example .env
 ```
 
 Edit `ml-service/.env` with your actual values:
+
 ```env
 # Azure OpenAI Configuration
 AZURE_OPENAI_API_KEY=your_azure_openai_api_key
@@ -93,12 +100,14 @@ FRONTEND_URL=http://localhost:3000
 ## Required Services
 
 ### Supabase Setup
+
 1. Create a new project at [supabase.com](https://supabase.com)
 2. Go to Settings > API
 3. Copy your Project URL and anon public key
 4. Copy your service_role secret key (for server-side operations)
 
 ### Azure OpenAI Setup
+
 1. Create an Azure OpenAI resource in Azure Portal
 2. Deploy a GPT-4 model
 3. Copy the endpoint URL and API key
@@ -109,12 +118,14 @@ FRONTEND_URL=http://localhost:3000
 ### Test Environment Loading
 
 **Frontend:**
+
 ```bash
 npm run dev
 # Check browser console for any environment variable errors
 ```
 
 **Backend:**
+
 ```bash
 cd backend
 npm run dev
@@ -122,6 +133,7 @@ npm run dev
 ```
 
 **ML Service:**
+
 ```bash
 cd ml-service
 python main.py
@@ -165,18 +177,20 @@ All services should start without environment variable errors.
 Run this in each service directory to verify environment loading:
 
 **Frontend/Backend (Node.js):**
+
 ```javascript
-console.log('Environment check:', {
+console.log("Environment check:", {
   supabase: !!process.env.SUPABASE_URL,
-  azure: !!process.env.AZURE_OPENAI_API_KEY
+  azure: !!process.env.AZURE_OPENAI_API_KEY,
 });
 ```
 
 **ML Service (Python):**
+
 ```python
 import os
 print('Environment check:', {
   'azure_key': bool(os.getenv('AZURE_OPENAI_API_KEY')),
   'azure_endpoint': bool(os.getenv('AZURE_OPENAI_ENDPOINT'))
 })
-``` 
+```

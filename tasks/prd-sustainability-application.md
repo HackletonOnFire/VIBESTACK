@@ -19,20 +19,24 @@
 ## User Stories
 
 ### Small Business Owner (1-50 employees)
+
 - **As a** small business owner, **I want to** quickly identify energy-saving opportunities **so that** I can reduce monthly utility costs without hiring sustainability consultants
 - **As a** restaurant owner, **I want to** track waste reduction progress **so that** I can optimize food purchasing and disposal costs
 
 ### Sustainability Manager (50-500 employees)
+
 - **As a** sustainability manager, **I want to** generate compliance reports **so that** I can meet regulatory requirements and investor ESG expectations
 - **As a** facilities manager, **I want to** simulate different efficiency scenarios **so that** I can justify capital expenditures for LED retrofits or HVAC upgrades
 
 ### Enterprise Sustainability Director (500+ employees)
+
 - **As a** sustainability director, **I want to** integrate utility and accounting APIs **so that** I can automate data collection across multiple locations
 - **As a** corporate executive, **I want to** track progress against carbon neutrality goals **so that** I can report to stakeholders and board members
 
 ## Functional Requirements
 
 ### Week 1 MVP Core Features
+
 1. **User Registration & Authentication**
    - Email/password registration with email verification
    - Google SSO integration for quick signup
@@ -59,6 +63,7 @@
    - Mock API endpoints for testing integrations
 
 ### Phase 2 Features (Weeks 2-4)
+
 6. **Enhanced Onboarding**
    - Full 5-step wizard with waste and logistics data
    - Industry-specific templates
@@ -80,6 +85,7 @@
    - Progress summaries
 
 ### Phase 3 Features (Months 2-3)
+
 10. **Live Integrations**
     - Utility company API connections
     - QuickBooks/Xero integration
@@ -108,6 +114,7 @@
 ## Design Considerations
 
 ### UI/UX Requirements
+
 - **Design System:** Clean, modern interface using Tailwind CSS or similar
 - **Mobile-First:** Responsive design supporting tablets and mobile devices
 - **Accessibility:** WCAG 2.1 AA compliance for forms and navigation
@@ -115,6 +122,7 @@
 - **Dashboard:** Card-based layout with intuitive data visualization
 
 ### Technical Architecture
+
 - **Frontend:** Next.js 14+ with TypeScript
 - **Backend:** Node.js with Express/Fastify
 - **ML Service:** Python FastAPI for AI processing
@@ -126,6 +134,7 @@
 ## Technical Considerations
 
 ### Security & Compliance
+
 - **MVP Requirements:**
   - HTTPS enforcement
   - Input validation and sanitization
@@ -140,6 +149,7 @@
   - Audit logging
 
 ### Performance Standards
+
 - **Page Load Times:** <3 seconds initial load
 - **API Response Times:** <500ms for dashboard data
 - **AI Processing:** <10 seconds for recommendation generation
@@ -147,6 +157,7 @@
 - **Data Upload:** Handle CSV files up to 10MB
 
 ### Integration Strategy
+
 - **Phase 1:** Mock APIs with CSV uploads for testing
 - **Phase 2:** RESTful APIs for utility and accounting integrations
 - **Phase 3:** Webhook support for real-time data updates
@@ -154,21 +165,25 @@
 ## Success Metrics
 
 ### Cost Savings Delivered (Primary)
+
 - **Target:** Average $500/month savings per user within 90 days
 - **Measurement:** Track implemented recommendations and actual cost reductions
 - **Validation:** User-reported savings via monthly surveys
 
 ### Carbon Footprint Reductions (Primary)
+
 - **Target:** 15% average carbon footprint reduction within 6 months
 - **Measurement:** Calculate CO2e reductions from implemented measures
 - **Reporting:** Monthly progress reports and annual summaries
 
 ### Revenue Targets (Primary)
+
 - **Freemium Conversion:** 15% of free users upgrade to premium within 60 days
 - **Monthly Recurring Revenue:** $50K MRR by month 6
 - **Customer Acquisition Cost:** <$200 CAC with 12-month payback period
 
 ### User Engagement (Secondary)
+
 - **Onboarding Completion:** 80% completion rate for full wizard
 - **Daily Active Users:** 40% of registered users active weekly
 - **Feature Adoption:** 60% of users try AI recommendations within first week
@@ -176,6 +191,7 @@
 ## Monetization Strategy: Freemium Model
 
 ### Free Tier Features
+
 - Basic onboarding wizard
 - Simple dashboard with manual data entry
 - 3 AI recommendations per month
@@ -183,6 +199,7 @@
 - Community support
 
 ### Premium Tier ($29/month per location)
+
 - Unlimited AI recommendations
 - Advanced dashboard with custom KPIs
 - CSV bulk uploads
@@ -191,6 +208,7 @@
 - PDF report generation
 
 ### Professional Tier ($99/month per organization)
+
 - Multi-location management
 - Advanced integrations (unlimited)
 - Custom reporting templates
@@ -199,6 +217,7 @@
 - Compliance report templates
 
 ### Enterprise Tier (Custom pricing)
+
 - White-glove onboarding
 - Custom AI model training
 - Advanced analytics
@@ -227,4 +246,4 @@
 **Document Version:** 1.0  
 **Last Updated:** [Current Date]  
 **Author:** Product Team  
-**Review Status:** Pending stakeholder review 
+**Review Status:** Pending stakeholder review

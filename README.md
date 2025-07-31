@@ -1,2 +1,2 @@
-# VIBESTACK
-Welcome to VIBEStack
+# Casgo
+Welcome to Casgo - AI-powered Sustainability Application

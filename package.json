@@ -1,0 +1,45 @@
+{
+  "name": "casgo",
+  "version": "1.0.0",
+  "description": "Casgo - AI-powered Sustainability Application that helps businesses reduce costs and carbon footprints",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackletonOnFire/VIBESTACK.git"
+  },
+  "keywords": [
+    "sustainability",
+    "carbon-footprint",
+    "ai",
+    "saas",
+    "next.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackletonOnFire/VIBESTACK/issues"
+  },
+  "homepage": "https://github.com/HackletonOnFire/VIBESTACK#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "^15.4.5",
+    "next": "^15.4.5",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  }
+}

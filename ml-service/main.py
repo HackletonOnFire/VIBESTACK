@@ -20,7 +20,7 @@ ENVIRONMENT_CONFIG = {
 }
 
 # Log environment status
-print("🔧 ML Service Environment Configuration:")
+print("ML Service Environment Configuration:")
 print(f"  - Port: {ENVIRONMENT_CONFIG['ML_SERVICE_PORT']}")
 print(f"  - Debug mode: {ENVIRONMENT_CONFIG['DEBUG']}")
 print(f"  - Azure OpenAI endpoint configured: {bool(ENVIRONMENT_CONFIG['AZURE_OPENAI_ENDPOINT'])}")

@@ -91,7 +91,7 @@ Based on the PRD analysis and current greenfield project state, here are the det
   - [x] 1.2 Set up Node.js backend with Express/Fastify and TypeScript
   - [x] 1.3 Initialize Python FastAPI ML service with virtual environment
   - [x] 1.4 Configure environment variables for all services (Supabase, Azure OpenAI)
-  - [ ] 1.5 Set up package.json scripts for development and deployment
+  - [x] 1.5 Set up package.json scripts for development and deployment
   - [ ] 1.6 Configure ESLint, Prettier, and TypeScript configurations
   - [ ] 1.7 Set up basic project structure with folders and initial files
 
